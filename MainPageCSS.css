@@ -12,6 +12,8 @@ body{
   color: white;
   text-align: center;
   width: fit-content;
+  margin-bottom: .25em;
+  margin-top: .25em;
 }
 .navbutton:hover{
   border-color:transparent;
