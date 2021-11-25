@@ -1,0 +1,60 @@
+body{
+  margin:0;
+  background-color: #1f1f20;
+}
+.navbutton{
+  font-size: large;
+  border-color: transparent;
+  padding: .6em;
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  width: fit-content;
+}
+.navbutton:hover{
+  border-color:transparent;
+  background-color: #333333;
+}
+.topnav {
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: 0;
+  background-color: black;
+  color: white;
+  height: fit-content;
+}
+.divider{
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+.pagetitle{
+}
+.basicinfo{
+  text-align: center;
+
+  background-color: purple;
+  color: white;
+}
+
+.newpagelink{
+  display: inline-flex;
+  border-radius: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-decoration: none;
+}
+
+.card{
+  margin-top: 5%;
+  margin-left: 0%;
+  border-style: solid;
+  border-width: medium;
+  border-color: #515454;
+  background-color: #2a2b2b;
+  color: white;
+  width: 17.5em;
+}
