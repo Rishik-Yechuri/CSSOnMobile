@@ -1,3 +1,4 @@
+
 body{
   margin:0;
   background-color: #1f1f20;
@@ -19,6 +20,12 @@ body{
   border-color:transparent;
   background-color: #333333;
 }
+/*@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 2) {
+  ali
+}*/
 .topnav {
   align-items: center;
   align-content: center;
@@ -27,6 +34,40 @@ body{
   background-color: black;
   color: white;
   height: fit-content;
+}
+@media  (max-width: 600px){
+  .topnav{
+    background-color: purple;
+    padding-top: .8em;
+    align-items: start;
+  }
+  .newpagelink{
+    display: none;
+  }
+  .navbutton{
+    display: none;
+  }
+  .dropdown{
+    text-align: center;
+    font-size: .85cm;
+    position: absolute;
+    width: 100%;
+    background-color: palevioletred;
+  }
+  .dropdownlink{
+    text-decoration: none;
+    display: inline-flex;
+    text-align: center;
+    color:white;
+  }
+  #hamburgerbutton{
+    border-style: none;
+    height: 21px;
+    width: 30px;
+    display:block;
+    margin-left: 1.6em;
+  }
+
 }
 .divider{
   padding-top: 0;
