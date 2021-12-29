@@ -35,11 +35,23 @@ and (-webkit-device-pixel-ratio: 2) {
   color: white;
   height: fit-content;
 }
+.dropdown{
+  display: none;
+}
+.dropdownlink{
+  display: none;
+}
 @media  (max-width: 600px){
   .topnav{
     background-color: purple;
     padding-top: .8em;
     align-items: start;
+  }
+  .dropdown{
+    display: block;
+    }
+  .dropdownlink{
+    display: block;
   }
   .newpagelink{
     display: none;
@@ -49,12 +61,14 @@ and (-webkit-device-pixel-ratio: 2) {
   }
   .dropdown{
     text-align: center;
-    font-size: .85cm;
+    font-size: .75cm;
     position: absolute;
     width: 100%;
-    background-color: palevioletred;
+    background-color: pink;
   }
   .dropdownlink{
+    margin-top: .2em;
+    margin-bottom: .2em;
     text-decoration: none;
     display: inline-flex;
     text-align: center;
