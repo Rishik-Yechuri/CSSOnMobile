@@ -1,12 +1,19 @@
+var mobileDropdownOpened = false;
 function openMenuClicked() {
-    var dropdownElements = document.getElementsByClassName("dropdown");
-    var numOfDropdownElements = dropdownElements.length;
-    for (var i=0; i<numOfDropdownElements;i++){
-        dropdownElements[i].style.display='block';
+    var dropDownElements = document.getElementById("mobiledropdowncontainer");
+    var basicInfo = document.getElementsByClassName('basicinfo');
+    if(!mobileDropdownOpened){
+        dropDownElements.style.display = 'block';
+        basicInfo[0].style.display = 'none';
+        document.getElementById("hamburgerbutton").style.background = "url(exitbutton.png)";
+        document.getElementById("hamburgerbutton").style.height = "18px";
+        document.getElementById("hamburgerbutton").style.width = "18px";
+    }else{
+        dropDownElements.style.display = 'none';
+        basicInfo[0].style.display = 'block';
+        document.getElementById("hamburgerbutton").style.background = "url(smallhamburgermenu.png)";
+        document.getElementById("hamburgerbutton").style.height = "14px";
+        document.getElementById("hamburgerbutton").style.width = "20px";
     }
-    var dropdownLinkElements = document.getElementsByClassName("dropdownlink");
-    var numOfDropdownLinkElements = dropdownLinkElements.length;
-    for (var i=0; i<numOfDropdownLinkElements;i++){
-        dropdownLinkElements[i].style.display='block';
-    }
+    mobileDropdownOpened = !mobileDropdownOpened;
 }

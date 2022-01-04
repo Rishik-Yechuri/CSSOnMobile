@@ -1,25 +1,31 @@
+html{
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-color: #1f1f20;
+    color: white;
+    height: 100%;
+}
 
-body{
-  margin:0;
-  background-color: #1f1f20;
-  color: white;
+.navbutton {
+    font-size: large;
+    border-color: transparent;
+    padding: .6em;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    width: fit-content;
+    margin-bottom: .25em;
+    margin-top: .25em;
 }
-.navbutton{
-  font-size: large;
-  border-color: transparent;
-  padding: .6em;
-  border-radius: 20px;
-  background-color: transparent;
-  color: white;
-  text-align: center;
-  width: fit-content;
-  margin-bottom: .25em;
-  margin-top: .25em;
+
+.navbutton:hover {
+    border-color: transparent;
+    background-color: #333333;
 }
-.navbutton:hover{
-  border-color:transparent;
-  background-color: #333333;
-}
+
 /*@media screen
 and (device-width: 360px)
 and (device-height: 640px)
@@ -27,76 +33,114 @@ and (-webkit-device-pixel-ratio: 2) {
   ali
 }*/
 .topnav {
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  margin: 0;
-  background-color: black;
-  color: white;
-  height: fit-content;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 0;
+    background-color: black;
+    color: white;
+    height: fit-content;
 }
-.dropdown{
-  display: none;
+
+.dropdown {
+    display: none;
 }
-.dropdownlink{
-  display: none;
+
+.dropdownlink {
+    display: none;
 }
-@media  (max-width: 600px){
-  .topnav{
-    background-color: purple;
-    padding-top: .8em;
-    align-items: start;
-  }
-  .dropdown{
-    display: block;
+.emptyspacebox{
+}
+#wideline{
+    display: none;
+}
+#hamburgerbutton {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    #mobiledropdowncontainer{
+        display: none;
     }
-  .dropdownlink{
-    display: block;
-  }
-  .newpagelink{
-    display: none;
-  }
-  .navbutton{
-    display: none;
-  }
-  .dropdown{
+    .topnav {
+        background-color: black;;
+        border-color: black;
+        align-items: start;
+        padding-top: .90em;
+        height: 1.9em;
+    }
+    .dropdownlink {
+        display: block;
+        padding-top: .10em;
+        padding-bottom: .10em;
+    }
+
+    .newpagelink {
+        display: none;
+    }
+
+    .navbutton {
+        display: none;
+    }
+
+    .dropdown {
+        width: 100%;
+        display: block;
+        background-color: #1f1f20;
+        text-align: center;
+        font-size: .70cm;
+        position: absolute;
+    }
+
+    .dropdownlink {
+        padding-bottom: .35em;
+        padding-top: .35em;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+    }
+    .line{
+        line-height: normal;
+        display: block;
+        margin-left: .5em;
+        margin-right: .5em;
+        margin-bottom: 0;
+        margin-top: 0;
+        border-color: #666666;
+    }
+    #wideline{
+        line-height: normal;
+        display: block;
+        border-color: #666666;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #hamburgerbutton {
+        border-style: none;
+        height: 14px;
+        width: 20px;
+        display: block;
+        margin-left: 1.6em;
+    }
+
+}
+
+.divider {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.basicinfo {
     text-align: center;
-    font-size: .75cm;
-    position: absolute;
-    width: 100%;
-    background-color: pink;
-  }
-  .dropdownlink{
-    margin-top: .2em;
-    margin-bottom: .2em;
-    text-decoration: none;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.newpagelink {
     display: inline-flex;
-    text-align: center;
-    color:white;
-  }
-  #hamburgerbutton{
-    border-style: none;
-    height: 21px;
-    width: 30px;
-    display:block;
-    margin-left: 1.6em;
-  }
-
-}
-.divider{
-  padding-top: 0;
-  margin-top: 0;
-}
-.basicinfo{
-  text-align: center;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-.newpagelink{
-  display: inline-flex;
-  border-radius: 20px;
-  margin-left: 2%;
-  margin-right: 2%;
-  text-decoration: none;
+    border-radius: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-decoration: none;
 }
