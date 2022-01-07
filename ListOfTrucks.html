@@ -7,6 +7,7 @@
 </head>
 <body>
 <div class="topnav">
+  <button id="hamburgerbutton" onclick="openMenuClicked()" style="background: url(smallhamburgermenu.png)"></button>
   <a href="ListOfSedans.html" class="newpagelink">
     <button class="navbutton" id="sedan">
       Sedans
@@ -27,6 +28,34 @@
       Minivans
     </button>
   </a>
+</div>
+<div id="mobiledropdowncontainer">
+  <hr id="wideline">
+  <div class="dropdown">
+    <div>
+      <a href="ListOfSedans.html" class="dropdownlink">
+        Sedans
+      </a>
+      <hr class="line">
+    </div>
+    <div>
+      <a href="ListOfSuvs.html" class="dropdownlink">
+        SUVs
+      </a>
+      <hr class="line">
+    </div>
+    <div>
+      <a href="ListOfTrucks.html" class="dropdownlink">
+        Trucks
+      </a>
+      <hr class="line">
+    </div>
+    <div>
+      <a href="ListOfMinivans.html" class="dropdownlink">
+        Minivans
+      </a>
+    </div>
+  </div>
 </div>
 <div class = "basicinfo">
   <h1 class="pagetitle">Trucks</h1>
@@ -63,5 +92,6 @@
     </p>
   </div>
 </div>
+<script src="MobileJavascript.js"></script>
 </body>
 </html>
