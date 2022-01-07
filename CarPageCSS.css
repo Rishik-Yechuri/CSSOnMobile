@@ -78,6 +78,9 @@ body{
 #wideline{
   display: none;
 }
+.basicinfo{
+  display: block;
+}
 #hamburgerbutton {
   display: none;
 }

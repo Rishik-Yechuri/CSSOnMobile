@@ -25,6 +25,9 @@ body {
     border-color: transparent;
     background-color: #333333;
 }
+.basicinfo{
+    display: block;
+}
 
 /*@media screen
 and (device-width: 360px)
