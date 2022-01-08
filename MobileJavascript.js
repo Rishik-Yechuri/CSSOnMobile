@@ -10,8 +10,12 @@ function openMenuClicked() {
         document.getElementById("hamburgerbutton").style.height = "18px";
         document.getElementById("hamburgerbutton").style.width = "18px";
     } else {
+        if ($(window).width() <= 440) {
+            basicInfo[0].style.display = 'grid';
+        }else{
+            basicInfo[0].style.display = 'block'
+        }
         dropDownElements.style.display = 'none';
-        basicInfo[0].style.display = 'block';
         document.getElementById("hamburgerbutton").style.background = "url(smallhamburgermenu.png)";
         document.getElementById("hamburgerbutton").style.height = "14px";
         document.getElementById("hamburgerbutton").style.width = "20px";
@@ -27,7 +31,7 @@ function reportWindowSize() {
         if (mobileDropdownOpened) {
             basicInfo[0].style.display = 'none';
         } else {
-            basicInfo[0].style.display = 'block';
+            basicInfo[0].style.display = 'grid';
         }
     }
 }
